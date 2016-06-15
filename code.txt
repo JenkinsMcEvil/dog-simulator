@@ -5,43 +5,66 @@ class Dog
         case breed
         when "German Shepherd"
            @size = "large"
+           @status = "awake"
         when "Labrador"
            @size = "medium"
+           @status = "awake"
         when "Shiba Inu"
            @size = "medium"
+           @status = "awake"
         when "Beagle"
            @size = "small"
+           @status = "awake"
         when "Pomeranian"
            @size = "toy"
+           @status = "awake"
         when "Chihuahua"
            @size = "toy"
+           @status = "awake"
         when "Golden Retriever"
            @size = "medium"
+           @status = "awake"
         when "Bulldog"
            @size = "small"
+           @status = "awake"
         when "Siberian Husky"
            @size = "large"
+           @status = "awake"
         when "Rottweiler"
            @size = "extra large"
+           @status = "awake"
         when "Pug"
            @size = "small"
+           @status = "awake"
         when "Jack Russell Terrier"
            @size = "small"
+           @status = "awake"
         when "Corgi"
            @size = "small"
+           @status = "awake"
         when "Dachshund"
            @size = "small"
+           @status = "awake"
         when "Sheepdog"
            @size = "large"
+           @status = "awake"
         when "Basset Hound"
            @size = "small"
+           @status = "awake"
         when "Samoyed"
            @size = "small"
+           @status = "awake"
         when "Yorkshire Terrier"
            @size = "small"   
-           
+           @status = "awake"
+         when "Poodle"
+           @size = "small" or "toy"
+           @status = "awake"
+      
+  
         else
            @size = "indeterminate"
+           @status = "unknown"
         end
     end
     def bark
@@ -49,6 +72,7 @@ class Dog
             puts "Yip!"
         else
             puts "Woof!"
+        
         end
     end
 end
@@ -71,6 +95,7 @@ she = Dog.new ("Sheepdog", "Sheepdog")
 bas = Dog.new ("Basset Hound", "Basset Hound")
 sam = Dog.new ("Samoyed", "Samoyed")
 yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier")
+fancy = Dog.new ("Poodle", "Poodle")
 
 pom.bark
 lab.bark
@@ -90,3 +115,4 @@ she.bark
 bas.bark
 sam.bark
 yor.bark
+fancy.bark
