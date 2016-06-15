@@ -2,7 +2,7 @@ class Dog
     def initialize(name, breed, status)
         @name = name
         @breed = breed
-        attr_accessor :status
+        @status = status
         case breed
         when "German Shepherd"
            @size = "large"
@@ -84,25 +84,26 @@ class Dog
     end
 end
 
-lab = Dog.new("Labrador","Labrador")
-pom = Dog.new("Pomeranian","Pomeranian")
-chi = Dog.new("Chihuahua","Chihuahua")
-shi = Dog.new("Shiba Inu","Shiba Inu")
-ger = Dog.new("German Shepherd", "German Shepherd")
-bea = Dog.new("Beagle", "Beagle")
-pug = Dog.new("Pug", "Pug")
-rot = Dog.new("Rottweiler", "Rottweiler")
-hus = Dog.new("Siberian Husky", "Siberian Husky")
-bul = Dog.new("Bulldog", "Bulldog")
-gol = Dog.new("Golden Retriever", "Golden Retriever")
-jack = Dog.new ("Jack Russell Terrier", "Jack Russell Terrier")
-cor = Dog.new ("Corgi", "Corgi")
-dac = Dog.new ("Dachshund", "Dachshund")
-she = Dog.new ("Sheepdog", "Sheepdog")
-bas = Dog.new ("Basset Hound", "Basset Hound")
-sam = Dog.new ("Samoyed", "Samoyed")
-yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier")
-fancy = Dog.new ("Poodle", "Poodle")
+lab = Dog.new("Labrador","Labrador", "awake")
+pom = Dog.new("Pomeranian","Pomeranian", "awake")
+chi = Dog.new("Chihuahua","Chihuahua", "awake")
+shi = Dog.new("Shiba Inu","Shiba Inu", "awake")
+ger = Dog.new("German Shepherd", "German Shepherd", "awake")
+bea = Dog.new("Beagle", "Beagle", "awake")
+pug = Dog.new("Pug", "Pug", "awake")
+rot = Dog.new("Rottweiler", "Rottweiler", "awake")
+hus = Dog.new("Siberian Husky", "Siberian Husky", "awake")
+bul = Dog.new("Bulldog", "Bulldog", "awake")
+gol = Dog.new("Golden Retriever", "Golden Retriever", "awake")
+jack = Dog.new ("Jack Russell Terrier", "Jack Russell Terrier", "awake")
+cor = Dog.new ("Corgi", "Corgi", "awake")
+dac = Dog.new ("Dachshund", "Dachshund", "awake")
+she = Dog.new ("Sheepdog", "Sheepdog", "awake")
+bas = Dog.new ("Basset Hound", "Basset Hound", "awake")
+sam = Dog.new ("Samoyed", "Samoyed", "awake")
+yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier","awake")
+fancy = Dog.new ("Poodle", "Poodle","awake")
+iri = Dog.new ("Irish Wolfhound","Irish Wolfhound","awake")
 
 pom.bark
 lab.bark
