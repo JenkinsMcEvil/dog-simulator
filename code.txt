@@ -1,7 +1,8 @@
 class Dog
-    def initialize(name, breed)
+    def initialize(name, breed, status)
         @name = name
         @breed = breed
+        attr_accessor :status
         case breed
         when "German Shepherd"
            @size = "large"
