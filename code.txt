@@ -25,6 +25,20 @@ class Dog
            @size = "extra large"
         when "Pug"
            @size = "small"
+        when "Jack Russell Terrier"
+           @size = "small"
+        when "Corgi"
+           @size = "small"
+        when "Dachshund"
+           @size = "small"
+        when "Sheepdog"
+           @size = "large"
+        when "Basset Hound"
+           @size = "small"
+        when "Samoyed"
+           @size = "small"
+        when "Yorkshire Terrier"
+           @size = "small"   
            
         else
            @size = "indeterminate"
@@ -50,6 +64,13 @@ rot = Dog.new("Rottweiler", "Rottweiler")
 hus = Dog.new("Siberian Husky", "Siberian Husky")
 bul = Dog.new("Bulldog", "Bulldog")
 gol = Dog.new("Golden Retriever", "Golden Retriever")
+jack = Dog.new ("Jack Russell Terrier", "Jack Russell Terrier")
+cor = Dog.new ("Corgi", "Corgi")
+dac = Dog.new ("Dachshund", "Dachshund")
+she = Dog.new ("Sheepdog", "Sheepdog")
+bas = Dog.new ("Basset Hound", "Basset Hound")
+sam = Dog.new ("Samoyed", "Samoyed")
+yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier")
 
 pom.bark
 lab.bark
@@ -62,3 +83,10 @@ rot.bark
 hus.bark
 bul.bark
 gol.bark
+jack.bark
+cor.bark
+dac.bark
+she.bark
+bas.bark
+sam.bark
+yor.bark
