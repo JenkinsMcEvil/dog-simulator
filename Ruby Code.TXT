@@ -1,0 +1,40 @@
+class Dog
+    def initialize(name, breed)
+        @name = name
+        @breed = breed
+        case breed
+        when "German Shepherd"
+           @size = "large"
+        when "Labrador"
+           @size = "medium"
+        when "Beagle"
+           @size = "small"
+        when "Pomeranian"
+           @size = "toy"
+        when "Chihuahua"
+           @size = "toy"
+        else
+           @size = "indeterminate"
+        end
+    end
+    def bark
+        if @size == "small" or @size == "toy"
+            puts "Yip!"
+        else
+            puts "Woof!"
+        end
+    end
+end
+
+lab = Dog.new("Labrador","Labrador")
+pom = Dog.new("Pomeranian","Pomeranian")
+chi = Dog.new("Chihuahua","Chihuahua")
+
+puts "Pom:"
+pom.bark
+
+puts "Lab:"
+lab.bark  #
+
+puts "Chih:"
+chi.bark
