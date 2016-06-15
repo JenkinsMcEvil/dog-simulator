@@ -57,8 +57,11 @@ class Dog
         when "Yorkshire Terrier"
            @size = "small"   
            @status = "awake"
-         when "Poodle"
-           @size = "small" or "toy"
+        when "Poodle"
+           @size = "small"
+           @status = "awake"
+        when "Toy Poodle"
+           @size = "toy"
            @status = "awake"
       
   
