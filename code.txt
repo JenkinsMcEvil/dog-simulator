@@ -2,71 +2,50 @@ class Dog
     def initialize(name, breed, status)
         @name = name
         @breed = breed
-        attr_accessor :status
+        @status = status
         case breed
         when "German Shepherd"
            @size = "large"
-           @status = "awake"
         when "Labrador"
            @size = "medium"
-           @status = "awake"
         when "Shiba Inu"
            @size = "medium"
-           @status = "awake"
         when "Beagle"
            @size = "small"
-           @status = "awake"
         when "Pomeranian"
            @size = "toy"
-           @status = "awake"
         when "Chihuahua"
            @size = "toy"
-           @status = "awake"
         when "Golden Retriever"
            @size = "medium"
-           @status = "awake"
         when "Bulldog"
            @size = "small"
-           @status = "awake"
         when "Siberian Husky"
            @size = "large"
-           @status = "awake"
         when "Rottweiler"
            @size = "extra large"
-           @status = "awake"
         when "Irish Wolfhound"
            @size = "extra large"
-           @status = "awake"
         when "Pug"
            @size = "small"
-           @status = "awake"
         when "Jack Russell Terrier"
            @size = "small"
-           @status = "awake"
         when "Corgi"
            @size = "small"
-           @status = "awake"
         when "Dachshund"
            @size = "small"
-           @status = "awake"
         when "Sheepdog"
            @size = "large"
-           @status = "awake"
         when "Basset Hound"
            @size = "small"
-           @status = "awake"
         when "Samoyed"
            @size = "small"
-           @status = "awake"
         when "Yorkshire Terrier"
            @size = "small"   
-           @status = "awake"
         when "Poodle"
            @size = "small"
-           @status = "awake"
         when "Toy Poodle"
            @size = "toy"
-           @status = "awake"
       
   
         else
@@ -74,35 +53,42 @@ class Dog
            @status = "unknown"
         end
     end
+    
+    attr_accessor :status
+    
     def bark
-        if @size == "small" or @size == "toy"
-            puts "Yip!"
+        if @status == "awake"
+            if @size == "small" or @size == "toy"
+                puts "Yip!"
+            else
+                puts "Woof!"
+            end
         else
-            puts "Woof!"
-        
+            puts "Let sleeping dogs lie. Don't get them to bark."
         end
     end
 end
 
-lab = Dog.new("Labrador","Labrador")
-pom = Dog.new("Pomeranian","Pomeranian")
-chi = Dog.new("Chihuahua","Chihuahua")
-shi = Dog.new("Shiba Inu","Shiba Inu")
-ger = Dog.new("German Shepherd", "German Shepherd")
-bea = Dog.new("Beagle", "Beagle")
-pug = Dog.new("Pug", "Pug")
-rot = Dog.new("Rottweiler", "Rottweiler")
-hus = Dog.new("Siberian Husky", "Siberian Husky")
-bul = Dog.new("Bulldog", "Bulldog")
-gol = Dog.new("Golden Retriever", "Golden Retriever")
-jack = Dog.new ("Jack Russell Terrier", "Jack Russell Terrier")
-cor = Dog.new ("Corgi", "Corgi")
-dac = Dog.new ("Dachshund", "Dachshund")
-she = Dog.new ("Sheepdog", "Sheepdog")
-bas = Dog.new ("Basset Hound", "Basset Hound")
-sam = Dog.new ("Samoyed", "Samoyed")
-yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier")
-fancy = Dog.new ("Poodle", "Poodle")
+lab = Dog.new("Labrador","Labrador","awake")
+pom = Dog.new("Pomeranian","Pomeranian","awake")
+chi = Dog.new("Chihuahua","Chihuahua","awake")
+shi = Dog.new("Shiba Inu","Shiba Inu","awake")
+ger = Dog.new("German Shepherd", "German Shepherd","awake")
+bea = Dog.new("Beagle", "Beagle","awake")
+pug = Dog.new("Pug", "Pug","awake")
+iri = Dog.new("Tribble","Irish Wolfhound","asleep")
+rot = Dog.new("Rottweiler", "Rottweiler","awake")
+hus = Dog.new("Siberian Husky", "Siberian Husky","awake")
+bul = Dog.new("Bulldog", "Bulldog","awake")
+gol = Dog.new("Golden Retriever", "Golden Retriever","awake")
+jack = Dog.new ("Jack Russell Terrier", "Jack Russell Terrier","awake")
+cor = Dog.new ("Corgi", "Corgi","awake")
+dac = Dog.new ("Dachshund", "Dachshund","awake")
+she = Dog.new ("Sheepdog", "Sheepdog","awake")
+bas = Dog.new ("Basset Hound", "Basset Hound","asleep")
+sam = Dog.new ("Samoyed", "Samoyed","awake")
+yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier","awake")
+fancy = Dog.new ("Poodle", "Poodle","awake")
 
 pom.bark
 lab.bark
@@ -111,6 +97,7 @@ bea.bark
 shi.bark
 ger.bark
 pug.bark
+iri.bark
 rot.bark
 hus.bark
 bul.bark
