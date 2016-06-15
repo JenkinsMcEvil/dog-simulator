@@ -1,0 +1,36 @@
+class Dog
+    def initialize(name, breed, status)
+        @name = name
+        @breed = breed
+        @status = status
+        case breed
+     when "Irish Wolfhound"
+           @size = "extra large"
+ 
+  
+        else
+           @size = "indeterminate"
+           @status = "unknown"
+        end
+    end
+    
+    attr_accessor :status
+    
+    def sleep
+        if @status == "awake"
+            if @size == "small" or @size == "toy"
+                puts "Yip!"
+            else
+                puts "Woof!"
+            end
+        else
+            puts "Let sleeping dogs lie. Don't get them to bark."
+        end
+    end
+end
+
+
+iri = Dog.new("Tribble","Irish Wolfhound","asleep")
+
+
+iri.sleep
