@@ -7,6 +7,8 @@ class Dog
            @size = "large"
         when "Labrador"
            @size = "medium"
+        when "Shiba Inu"
+           @size = "medium"
         when "Beagle"
            @size = "small"
         when "Pomeranian"
@@ -30,11 +32,4 @@ lab = Dog.new("Labrador","Labrador")
 pom = Dog.new("Pomeranian","Pomeranian")
 chi = Dog.new("Chihuahua","Chihuahua")
 
-puts "Pom:"
 pom.bark
-
-puts "Lab:"
-lab.bark  #
-
-puts "Chih:"
-chi.bark
