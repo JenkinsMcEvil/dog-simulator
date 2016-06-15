@@ -15,6 +15,17 @@ class Dog
            @size = "toy"
         when "Chihuahua"
            @size = "toy"
+        when "Golden Retriever"
+           @size = "medium"
+        when "Bulldog"
+           @size = "small"
+        when "Siberian Husky"
+           @size = "large"
+        when "Rottweiler"
+           @size = "extra large"
+        when "Pug"
+           @size = "small"
+           
         else
            @size = "indeterminate"
         end
@@ -31,5 +42,23 @@ end
 lab = Dog.new("Labrador","Labrador")
 pom = Dog.new("Pomeranian","Pomeranian")
 chi = Dog.new("Chihuahua","Chihuahua")
+shi = Dog.new("Shiba Inu","Shiba Inu")
+ger = Dog.new("German Shepherd", "German Shepherd")
+bea = Dog.new("Beagle", "Beagle")
+pug = Dog.new("Pug", "Pug")
+rot = Dog.new("Rottweiler", "Rottweiler")
+hus = Dog.new("Siberian Husky", "Siberian Husky")
+bul = Dog.new("Bulldog", "Bulldog")
+gol = Dog.new("Golden Retriever", "Golden Retriever")
 
 pom.bark
+lab.bark
+chi.bark
+bea.bark
+shi.bark
+ger.bark
+pug.bark
+rot.bark
+hus.bark
+bul.bark
+gol.bark
