@@ -85,7 +85,7 @@ class Cat
        if @status == "awake"
            puts "Purr!"
         else
-            puts "#{@name} is asleep, and can't purr."
+            puts "#{@name} purrs in their sleep."
         end
     end    
 end
