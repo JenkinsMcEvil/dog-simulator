@@ -46,8 +46,6 @@ class Dog
            @size = "small"
         when "Toy Poodle"
            @size = "toy"
-      
-  
         else
            @size = "indeterminate"
            @status = "unknown"
@@ -118,6 +116,3 @@ bas.bark
 sam.bark
 yor.bark
 fancy.bark
-
-tiddles = Cat.new("Tiddles", "Moggie","awake")
-tiddles.meow
