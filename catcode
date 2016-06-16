@@ -1,0 +1,44 @@
+
+class Cat
+    def initialize(name, breed, status)
+        @name = name
+        @breed = breed
+        @status = status
+        case breed
+        when "Domestic Shorthair"
+           @coat = "short"
+        when "Domestic Longhair"
+           @coat = "long"
+        when "Moggie"
+           @coat = "indeterminate"
+        when "British Shorthair"
+           @coat = "short"
+        when "American Shorthair"
+           @coat = "short"
+        when "Norwegian Forest Cat"
+           @coat = "medium"
+        when "Persian"
+           @coat = "long"
+        when "Sphynx"
+           @coat = "sphynx_coat"
+        else
+           @coat = "indeterminate"
+           @status = "unknown"
+        end
+    end
+    
+    def sleep
+        if @status == "awake"
+                @status = "asleep"
+                puts "#{@name} has gone to sleep."
+        else
+            puts "#{@name} is already asleep."
+        end
+    end
+    def meow
+        if @status == "awake"
+            puts "Meow!"
+        else
+            puts "#{@name} is asleep, and can't meow."
+        end
+    end
