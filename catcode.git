@@ -1,5 +1,6 @@
 
 
+
 class Cat
     def initialize(name, breed, status)
         @name = name
@@ -34,6 +35,17 @@ class Cat
            @coat = "short"
         when "Russian Blue"
            @coat = "short"
+        when "Devon Rex"
+           @coat = "devon_coat"
+        when "Himalayan Cat"
+           @coat = "large"
+        when "Manx Cat"
+           @coat = "short"
+        when "Singapura Cat"
+           @coat = "very short"
+        when "American Curl"   
+           @coat = "long"
+           
         else
            @coat = "indeterminate"
            @status = "unknown"
