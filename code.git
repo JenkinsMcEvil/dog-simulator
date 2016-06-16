@@ -89,7 +89,6 @@ bas = Dog.new ("Basset Hound", "Basset Hound","asleep")
 sam = Dog.new ("Samoyed", "Samoyed","awake")
 yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier","awake")
 fancy = Dog.new ("Poodle", "Poodle","awake")
-fancytoy = Dog.new ("Toy Poodle", "Toy Poodle", "awake")
 
 pom.bark
 lab.bark
@@ -111,4 +110,3 @@ bas.bark
 sam.bark
 yor.bark
 fancy.bark
-fancytoy.bark
