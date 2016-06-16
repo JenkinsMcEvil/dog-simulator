@@ -46,8 +46,6 @@ class Dog
            @size = "small"
         when "Toy Poodle"
            @size = "toy"
-      
-  
         else
            @size = "indeterminate"
            @status = "unknown"
