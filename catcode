@@ -42,3 +42,7 @@ class Cat
             puts "#{@name} is asleep, and can't meow."
         end
     end
+end
+
+tiddles = Cat.new("Tiddles", "Moggie","awake")
+tiddles.meow
