@@ -1,6 +1,4 @@
 
-
-
 class Cat
     def initialize(name, breed, status)
         @name = name
@@ -83,8 +81,17 @@ class Cat
             puts "#{@name} is asleep, and can't meow."
         end
     end
+    def purr
+       if @status == "awake"
+           puts "Purr!"
+        else
+            puts "#{@name} is asleep, and can't purr."
+        end
+    end    
 end
 tiddles = Cat.new("Tiddles", "Moggie","awake")
 tiddles.meow
+tiddles.purr
 tiddles.sleep
 tiddles.meow
+tiddles.purr
