@@ -42,8 +42,23 @@ class Cat
             puts "#{@name} is asleep, and can't meow."
         end
     end
-end
 
+    def wake
+        if @status == "asleep"
+                @status = "awake"
+                puts "#{@name} has woken up."
+        else
+            puts "#{@name} is already awake."
+        end
+    end
+    def meow
+        if @status == "awake"
+            puts "Meow!"
+        else
+            puts "#{@name} is asleep, and can't meow."
+        end
+    end
+end
 tiddles = Cat.new("Tiddles", "Moggie","awake")
 tiddles.meow
 tiddles.sleep

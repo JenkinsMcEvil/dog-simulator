@@ -73,6 +73,15 @@ class Dog
             puts "#{@name} is already asleep."
         end
     end
+    
+    def wake
+        if @status == "asleep"
+                @status = "awake"
+                puts "#{@name} has woken up."
+        else
+            puts "#{@name} is already awake."
+        end
+    end
 end
 
 lab = Dog.new("Labrador","Labrador","awake")
