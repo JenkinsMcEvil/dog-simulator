@@ -46,3 +46,5 @@ end
 
 tiddles = Cat.new("Tiddles", "Moggie","awake")
 tiddles.meow
+tiddles.sleep
+tiddles.meow
