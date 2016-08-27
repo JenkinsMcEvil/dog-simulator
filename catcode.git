@@ -1,9 +1,11 @@
 
 class Cat
-    def initialize(name, breed, status)
+    def initialize(name, breed, status, isfluffy)
         @name = name
         @breed = breed
         @status = status
+        @isfluffy = isfluffy
+        
         case breed
         when "Domestic Shorthair"
            @coat = "short"
@@ -11,6 +13,9 @@ class Cat
            @coat = "long"
         when "Moggie"
            @coat = "indeterminate"
+           @isfluffy = "n/a"
+        when "Fluffy Moggie"
+           @coat = "long"
         when "British Shorthair"
            @coat = "short"
         when "American Shorthair"
@@ -102,9 +107,17 @@ class Cat
        else
        puts "#{@name} is already awake!"
        end
-    end   
+    end
+    def fluffactions
+       if @isfluffy == "no"
+          puts "#{@name} is not fluffy and cannot use fluffy actions."
+       else
+          puts "#{@name} rolls over!"
+        end
+    end    
 end
-tiddles = Cat.new("Tiddles", "Moggie","awake")
+tiddles = Cat.new("Tiddles", "Moggie","awake", "no")
+tiddlesfluffy = Cat.new("Tiddles", "Moggie", "awake", "yes")
 tiddles.meow
 tiddles.purr
 tiddles.hiss
@@ -114,3 +127,4 @@ tiddles.meow
 tiddles.purr
 tiddles.hiss
 tiddles.wake
+tiddlesfluffy.fluffactions
