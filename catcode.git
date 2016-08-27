@@ -1,10 +1,10 @@
 
 class Cat
     def initialize(name, breed, status, isfluffy)
-        @name = name
-        @breed = breed
-        @status = status
-        @isfluffy = isfluffy
+        @name = name #The name of the cat.
+        @breed = breed #The breed of the cat.
+        @status = status #The cat's current status (e.g. sleeping).
+        @isfluffy = isfluffy #Is the cat fluffy? This allows it to perform certain actions.
         
         case breed
         when "Domestic Shorthair"
@@ -25,7 +25,7 @@ class Cat
         when "Persian"
            @coat = "long"
         when "Sphynx"
-           @coat = "sphynx_coat"
+           @coat = "sphynx_coat" #The sphynx have a special coat
         when "Siamese"
            @coat = "short"
         when "Mainecoon"
@@ -39,7 +39,7 @@ class Cat
         when "Russian Blue"
            @coat = "short"
         when "Devon Rex"
-           @coat = "devon_coat"
+           @coat = "devon_coat" #Like the spyhnx, the  devon rex also has a special coat.
         when "Himalayan Cat"
            @coat = "large"
         when "Manx Cat"
@@ -90,7 +90,7 @@ class Cat
        if @status == "awake"
            puts "Purr!"
         else
-            puts "#{@name} purrs in their sleep."
+            puts "#{@name} purrs in their sleep." #Cats can purr in their sleep, which is why we added this feature.
         end
     end
     def hiss
@@ -108,7 +108,7 @@ class Cat
        puts "#{@name} is already awake!"
        end
     end
-    def fluffactions
+    def fluffactions #If the cat is fluffy it can perform special actions.
        if @isfluffy == "no"
           puts "#{@name} is not fluffy and cannot use fluffy actions."
        else
@@ -117,14 +117,14 @@ class Cat
     end    
 end
 tiddles = Cat.new("Tiddles", "Moggie","awake", "no")
-tiddlesfluffy = Cat.new("Tiddles", "Moggie", "awake", "yes")
+tiddlesfluffy = Cat.new("Tiddles", "Moggie", "awake", "yes") #I created a fluffy version of "tiddles" to demonstrate the fluffy acts.
 tiddles.meow
 tiddles.purr
 tiddles.hiss
 tiddles.wake
-tiddles.sleep
+tiddles.sleep #Makes the cat fall asleep.
 tiddles.meow
 tiddles.purr
 tiddles.hiss
-tiddles.wake
+tiddles.wake #Wakes up the cat.
 tiddlesfluffy.fluffactions
