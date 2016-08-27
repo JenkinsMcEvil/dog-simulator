@@ -1,12 +1,8 @@
 class Dog
-    def initialize(name, breed, row, col)
+    def initialize(name, breed, status)
         @name = name
         @breed = breed
-        @position = {
-        "row"=>row,
-        "col"=>col]
-        }
-        @status = "awake"
+        @status = status
         case breed
         when "German Shepherd"
            @size = "large"
@@ -86,50 +82,46 @@ class Dog
             puts "#{@name} is already awake."
         end
     end
-    def where
-        puts "Row: #{@position["row"]}, Column: #{@position["col"]}"
-    end
 end
 
-lab = Dog.new("Da Vinci","Labrador", 1, 1)
-pom = Dog.new("Picasso","Pomeranian" 1, 2)
-chi = Dog.new("Miguel","Chihuahua" 2, 1)
-hus = Dog.new("Sergey", "Siberian Husky" 2, 2)
-//shi = Dog.new("Shiba Inu","Shiba Inu")
-//ger = Dog.new("German Shepherd", "German Shepherd")
-//bea = Dog.new("Beagle", "Beagle")
-//pug = Dog.new("Pug", "Pug")
-//iri = Dog.new("Tribble","Irish Wolfhound")
-//rot = Dog.new("Rottweiler", "Rottweiler")
-
-//bul = Dog.new("Bulldog", "Bulldog")
-//gol = Dog.new("Golden Retriever","Golden Retriever")
-//jack = Dog.new ("Jack Russell Terrier", "Jack Russell Terrier"")
-//cor = Dog.new ("Corgi", "Corgi")
-//dac = Dog.new ("Dachshund", "Dachshund")
-//she = Dog.new ("Sheepdog", "Sheepdog")
-//bas = Dog.new ("Basset Hound", "Basset Hound")
-//sam = Dog.new ("Samoyed", "Samoyed")
-//yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier")
-//fancy = Dog.new ("Poodle", "Poodle")
+lab = Dog.new("Labrador","Labrador","awake")
+pom = Dog.new("Pomeranian","Pomeranian","awake")
+chi = Dog.new("Chihuahua","Chihuahua","awake")
+shi = Dog.new("Shiba Inu","Shiba Inu","awake")
+ger = Dog.new("German Shepherd", "German Shepherd","awake")
+bea = Dog.new("Beagle", "Beagle","awake")
+pug = Dog.new("Pug", "Pug","awake")
+iri = Dog.new("Tribble","Irish Wolfhound","asleep")
+rot = Dog.new("Rottweiler", "Rottweiler","awake")
+hus = Dog.new("Siberian Husky", "Siberian Husky","awake")
+bul = Dog.new("Bulldog", "Bulldog","awake")
+gol = Dog.new("Golden Retriever", "Golden Retriever","awake")
+jack = Dog.new ("Jack Russell Terrier", "Jack Russell Terrier","awake")
+cor = Dog.new ("Corgi", "Corgi","awake")
+dac = Dog.new ("Dachshund", "Dachshund","awake")
+she = Dog.new ("Sheepdog", "Sheepdog","awake")
+bas = Dog.new ("Basset Hound", "Basset Hound","asleep")
+sam = Dog.new ("Samoyed", "Samoyed","awake")
+yor = Dog.new ("Yorkshire Terrier", "Yorkshire Terrier","awake")
+fancy = Dog.new ("Poodle", "Poodle","awake")
 
 pom.bark
 lab.bark
 chi.bark
-//bea.bark
-//shi.bark
-//ger.bark
-//pug.bark
-//iri.bark
-//rot.bark
+bea.bark
+shi.bark
+ger.bark
+pug.bark
+iri.bark
+rot.bark
 hus.bark
-//bul.bark
-//gol.bark
-//jack.bark
-//cor.bark
-//dac.bark
-//she.bark
-//bas.bark
-//sam.bark
-//yor.bark
-//fancy.bark
+bul.bark
+gol.bark
+jack.bark
+cor.bark
+dac.bark
+she.bark
+bas.bark
+sam.bark
+yor.bark
+fancy.bark
